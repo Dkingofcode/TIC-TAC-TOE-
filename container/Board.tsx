@@ -64,7 +64,7 @@ function Board() {
     })
 
     return(
-    <div>
+    <div className="main">
         <p>Hey {currentPlayer}, it's your turn</p>
          {winner && winner !== "BOTH" && <p className="player">Congratulations {winner}</p>}
          {winner && winner === "BOTH" && (

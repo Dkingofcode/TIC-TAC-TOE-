@@ -49,7 +49,11 @@ p{
 }
 
 
-
+@media screen and (min-width: 1000px) {
+  .grid{
+    background-color: red;
+  }
+}
 
 
 
