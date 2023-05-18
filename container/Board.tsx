@@ -66,15 +66,20 @@ function Board() {
     return(
     <div>
         <p>Hey {currentPlayer}, it's your turn</p>
-        This is the board
+         {winner && winner !== "BOTH" && <p>Congratulations {winner}</p>}
+         {winner && winner === "BOTH" && (
+              <p>Congratulations you're both winners</p>
+            )}
+
+
         <div className="grid">
         {Array(9).fill(null).map((_, i) => {
            return (
            <Square winner={winner} key={i} onClick={() => setSquareValue(i)} value={squares[i]} /> 
            );
-           })}
+        })}
         </div>
-        <button onClick={() => reset}>RESET</button>
+        <button onClick= {reset}>RESET</button>
         </div>
     );
 }

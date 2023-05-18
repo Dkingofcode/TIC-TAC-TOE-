@@ -20,6 +20,10 @@
   background-color: crimson;
 }
 
+p{
+  font-size: 2rem;
+}
+
 .reset{
     margin-top: 2rem;
     font-size: 2rem;
