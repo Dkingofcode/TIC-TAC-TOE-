@@ -1,6 +1,7 @@
 .grid{
   display: grid;
   grid-gap: 1px;
+  position: relative;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -21,12 +22,13 @@
 }
 
 p{
-  font-size: 2rem;
+  font-size: 1.4rem;
+  border-radius: 12px;
 }
 
 .reset{
-    margin-top: 2rem;
-    font-size: 2rem;
+    margin-top: 1.7rem;
+    font-size: 1.4rem;
     background-color: aqua;
     border: none;
     border-radius: 6px;
@@ -34,8 +36,17 @@ p{
     cursor: pointer;
 }
 
+.player{
+  position: absolute;
+  top: 130px;
+  right:  240px;
+}
 
-
+.player_b{
+  position: absolute;
+  top: 130px;
+  right:  40px;
+}
 
 
 

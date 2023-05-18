@@ -66,9 +66,9 @@ function Board() {
     return(
     <div>
         <p>Hey {currentPlayer}, it's your turn</p>
-         {winner && winner !== "BOTH" && <p>Congratulations {winner}</p>}
+         {winner && winner !== "BOTH" && <p className="player">Congratulations {winner}</p>}
          {winner && winner === "BOTH" && (
-              <p>Congratulations you're both winners</p>
+              <p className="player_b">Congratulations you're both winners</p>
             )}
 
 
@@ -79,7 +79,7 @@ function Board() {
            );
         })}
         </div>
-        <button onClick= {reset}>RESET</button>
+        <button className="reset" onClick= {reset}>RESET</button>
         </div>
     );
 }
